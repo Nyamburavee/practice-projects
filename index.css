@@ -1,0 +1,109 @@
+
+@import 
+url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    font-family: 'red hat displa', sans-serif;
+
+
+
+
+}
+ .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 450px;
+ }
+ .text-content{
+    
+    text-align: center;
+    padding: 40px;
+ }
+ .plan-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px;
+
+
+ }
+ .plan-box-left {
+    display: flex;
+    align-items: center;
+    text-align: left;
+ }
+ .plan-box-left  div{
+    margin-left: 20px;
+
+ }
+ .plan-box a:hover{
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+}
+    
+ .plan-box a{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    transition: color 3s ease;
+ }
+
+ a.proceed-btn{
+    text-decoration: none;
+    display: block;
+    color: white;
+    margin: 30px 0;
+    padding: 20px 0;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+ }
+ a.cancel-btn{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    transition: color 3s ease;
+ }
+ .title{
+
+    font-weight: 900px;
+    color: hsl(223, 47%, 23%);
+    font-size: 32px;
+    margin-bottom: 20px;
+ }
+ .subtitle{
+    margin-bottom: 15px;
+    color: hsl(225, 20%, 37%);
+    font-size: 14px;
+ }
+ .plan-box-left div h5 {
+    font-weight: 900;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+}
+.plan-box-left div p {
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+}
+@media only screen and (max-width: 425px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+    
+}
