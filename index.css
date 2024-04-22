@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: outfit, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    background-color: hsl(216, 50%, 16%);
+    max-width: 350px;
+    border-radius: 15px;
+    padding: 22px;
+    
+}
+.hero{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.hero-image{
+    width: 300px;
+    height: 260px;
+    border-radius: 5px;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+}
+.overlay img{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero:hover .overlay{
+    display: block ;
+}
+
+
+.title{
+    color: white;
+    font-weight: 600px;
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+.title:hover{
+    color: hsl(178, 100%, 50%);
+}
+.main-text{
+    color: hsl(215, 51%, 70%) ;
+    font-weight: 300px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.counter{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.eth-count{
+    display: flex;
+    flex-direction: row;
+    margin-right: auto; 
+}
+.day-count{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+
+}
+.eth-count p{
+    color: hsl(178, 100%, 50%);
+    margin-left: 5px;
+    font-size: 14px;
+}
+.day-count p{
+    color: hsl(215, 51%, 70%);
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.line{
+    border: 1px solid hsl(215, 32%, 27%);
+}
+
+.avatar{
+    display: flex;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+.avatar img{
+    height: auto;
+    display: block;
+    margin-right: 5px;
+
+}
+.avatar-text{
+    font-size: 12px;
+    padding: 5px;
+}
+.jules{
+    color:white;
+     font-style: 300;
+}
+.jules:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width: 375px){
+    .container{
+        width: 200px;
+        max-width: none;
+    }
+}
+
